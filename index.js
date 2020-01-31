@@ -2,8 +2,11 @@
 function superbowlWin(array) {
   let x = array.find( line => {
     if(line.result === "W") {
-      return line
+      return line.year
+    }
+    else {
+      return undefined
     }
   })
-  if(x) {return x.year}
+ return x 
 }
